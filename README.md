@@ -13,10 +13,10 @@ https://open.firstory.me/user/detectivepig/episodes
 
 ```bash
 poetry install
-poetry run python download_detectivepig_eps.py 111 113 --out=downloads
+poetry run python download_detectivepig_eps.py 111 113
 ```
 
 參數：
 - `start` / `end`：EP 起訖號
-- `--out`：輸出資料夾（預設為 `downloads`）
+- `--out`：輸出資料夾（預設為 `~/Downloads`）
 - `--overwrite`：覆蓋同名檔（`true/false`）
