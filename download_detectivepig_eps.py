@@ -142,7 +142,7 @@ def download(url: str, dest: Path, overwrite: bool):
 def download_eps(
     start: int,
     end: int,
-    out: str = "downloads",
+    out: str = "~/Downloads",
     rss: str = DEFAULT_RSS,
     overwrite: bool = False,
 ):
@@ -173,7 +173,7 @@ def download_eps(
         print("No matching episodes found.", file=sys.stderr)
         raise SystemExit(1)
 
-    outdir = Path(out)
+    outdir = Path(out).expanduser()
     for item in selected:
         safe_title = sanitize_filename(item["title"])
         ext = guess_extension(item["url"], item["type"])

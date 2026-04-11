@@ -2,6 +2,12 @@
 
 這個 repo 提供 Python script，用來下載 Firstory 上的 Podcast 節目。
 
+## 安裝
+
+```bash
+poetry install
+```
+
 ## 支援的 Podcast
 
 ### 豬探長推理故事集
@@ -18,7 +24,7 @@ poetry run python download_detectivepig_eps.py 111 113 --out=downloads
 
 參數：
 - `start` / `end`：EP 起訖號
-- `--out`：輸出資料夾（預設為 `downloads`）
+- `--out`：輸出資料夾（預設為 `~/Downloads`）
 - `--overwrite`：覆蓋同名檔（`true/false`）
 
 ---
@@ -50,8 +56,3 @@ poetry run python download_littleears_eps.py search 北極熊 鯨鯊 --out=downl
 - `--overwrite`：覆蓋同名檔（`true/false`）
 - `--dry_run`：僅列出符合集數，不下載
 
-## 安裝
-
-```bash
-poetry install
-```
